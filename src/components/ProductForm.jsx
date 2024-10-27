@@ -8,7 +8,7 @@ function ProductForm({ products, prices, onProductChange }) {
   const handleProductChange = (event) => {
     const index = event.target.value;
     setSelectedIndex(index);
-    setQuantity(1); // Reset quantity to 1 when changing the product
+    setQuantity(1);
     onProductChange(index, 1);
   };
 
